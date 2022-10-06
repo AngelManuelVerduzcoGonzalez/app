@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Mi primer página web</title>
+    <style>
+        #lista {
+            background-color: red;
+        }
+        .con_borde {
+            border-color: blue;
+            border: 5px solid;
+        };
+        #titulo {
+            background-color: green;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +33,7 @@
     </header>
     <div class="container">
         <aside>
-            <ul>
+            <ul id="lista">
                 <li>item 1</li>
                 <li>item 2</li>
                 <li>item 3</li>
@@ -28,7 +41,9 @@
             <ol></ol>
         </aside>
         <section>
-            <img src="./images/camp_nou.jpg" alt="">
+            <h1 id="titulo" class="con_borde">Messi</h1>
+            <img id="imagen1" class="con_borde" style="margin-left: 100px;" src="./images/messi.jpg" alt="">
+            <img id="imagen2" class="con_borde" style="margin-left: 100px;" src="./images/messi.jpg" alt="">
         </section>
     </div>
     <footer>
