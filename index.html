@@ -6,35 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Mi primer página web</title>
-    <style>
-        html, body {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            margin: 0;
-        }
-        header{
-            display: flex;
-            background-color: black;
-            color:white;
-            height: 20%;
-        }
-        #contenedor_principal {
-            display: flex;
-            background-color: antiquewhite;
-            color: black;
-            height: 60%;
-        }
-        .pie_pagina {
-            display: flex;
-            background-color: black;
-            color: white;
-            height: 20%;
-        }
-        .lateral {
-            background-color: aqua;
-        }
-    </style>
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <header>
@@ -49,17 +21,21 @@
     <div id="contenedor_principal" class="container">
         <section class="principal">
             <h1 id="titulo" class="con_borde">Mi pagina web</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex harum iure sunt blanditiis officia quasi, officiis itaque autem tempora omnis. Est voluptate maxime corporis officiis molestias, ducimus non commodi.</p>
+            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex harum iure sunt blanditiis officia quasi, officiis itaque autem tempora omnis. Est voluptate maxime corporis officiis molestias, ducimus non commodi.</p>
             <!-- <img id="imagen1" class="con_borde" style="margin-left: 100px;" src="./images/messi.jpg" alt=""> -->
             <!-- <img id="imagen2" class="con_borde" style="margin-left: 100px;" src="./images/messi.jpg" alt=""> -->
+            <button class="boton">Entrar</button>
+            <input type="submit">
+            <input type="text">
+            <input type="password">
+        </section>
             <aside class="lateral">
-                <ol>
+                <ol id="lista">
                     <li>item 1</li>
                     <li>item 2</li>
                     <li>item 3</li>
                 </ol>
             </aside>
-        </section>
     </div>
     <footer class="pie_pagina">
         <p>Copyright de mi página</p>
